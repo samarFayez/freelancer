@@ -1,0 +1,115 @@
+header {
+  height: 10vh;
+  background: #fff;
+  border-bottom: 1px solid rgb(53, 53, 53);
+}
+
+header h1 {
+    color: #da573c;
+}
+
+header h1::after {
+    background: #da573c;
+
+}
+
+header nav {
+  color: #000;
+}
+
+.sign-btn a {
+    float: left;
+    color: #000;
+    margin: 0 10px;
+
+}
+main {
+    background: #f2f6f8;
+    padding: 50px 0;
+}
+.project--page-details {
+    width: 80vw;
+    background: #fefefe;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.project--header span {
+    width: 19%;
+    display: inline-block;
+    margin: 10px 0;
+}
+
+.bid--btn {
+    background: #da573c;
+    color: #fff;
+    font-family: "Changa", sans-serif;
+}
+
+.bid--btn a {
+    color: #fff;
+}
+
+.project--description {
+    width: 70%;
+    float: right;
+}
+.project--skills{
+
+    float: left;
+    width: 30%;
+}
+.project--skills span {
+    background: #e4dfdf;
+    color: #777676;
+    padding: 5px;
+    display: inline-block;
+    margin: 5px 4px;
+    border-radius: 10px;
+    float: right;
+}
+
+.project--offers {
+    width: 80vw;
+    background: #fefefe;
+    margin: 30px auto;
+    padding: 20px;
+}
+
+.form--group {
+    display: inline-block;
+    width: 48%;
+}
+
+.input--group {
+    position: relative;
+}
+
+.input--group input {
+    padding: 10px;
+    width: 90%;
+}
+
+.input--group span{
+    position: absolute;
+    left: 0;
+    background: #d7d5d5;
+    padding: 4px;
+    min-width: 25px;
+    text-align: center;
+    color: #a9a8a8;
+}
+
+.input--group textarea {
+    width: 95%;
+    margin: 0px 34px;
+    height: 170px;
+}
+
+.dark--blue {
+    background: #33495e;
+    position: relative;
+    left: 0;
+    color: #fff;
+    font-family: "Changa", sans-serif;
+}

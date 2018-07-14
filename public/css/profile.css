@@ -1,0 +1,91 @@
+body {
+    background: #f3f6f8;
+}
+main {
+    height: 90vh;
+}
+header {
+    height: 80px;
+}
+header img {
+    margin: 10px;
+}
+
+header i {
+    margin: 25px;
+}
+
+.user--top{
+    position: relative;
+}
+
+.user--top i {
+    position: absolute;
+    top: 12px;
+    left: 200px;
+    margin: 20px;
+}
+
+.user--top h2 {
+    position: absolute;
+    top: 20px;
+    left: 70px;
+    width: 150px;
+}
+
+main {
+    padding: 0;
+}
+
+main h2 {
+    background: white;
+    width: 100%;
+    padding: 30px 70px
+}
+
+.user--profile {
+    width: 80%;
+    margin: 40px 50px;
+    padding: 30px;
+    background: #fff;
+}
+
+.user--profile-img img {
+    width: 100px;
+    margin-left: 20px;
+}
+
+
+
+.user--profile-info  {
+    width: 75%;
+}
+
+.user--profile-btn {
+    width: 10%;
+}
+
+.user--profile-btn button {
+    background: none;
+    border: 1px solid #293c50;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.user--profile-header span {
+    margin: 0 20px;
+}
+.user--projects {
+    width: 80%;
+    margin: 40px 50px;
+    padding: 30px;
+    background: #fff;
+}
+
+#project-user-date {
+    border: 1px solid;
+}
+
+.user--project {
+    margin: 20px;
+}

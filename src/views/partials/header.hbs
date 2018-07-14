@@ -1,0 +1,24 @@
+<header id="js-header">
+  <div class="container">
+    <div class="logo">
+      <img src="https://i.imgur.com/KFWF7FX.png" alt="" style="width: 220px;" onMouseOver="this.style.cursor = 'pointer'" onclick="window.location='/'">
+    </div>
+    <form>
+      <div class="icons">
+        <a><i class="fa fa-bell-o fa-2x" title="notification" onclick = "w3.toggleShow('.overlay2');getNotification();" style="{{#if colorNotification}}color:#ff6c00{{/if}}"></i></a>
+        {{coountOrder}}<a href="/cart"><i class="fa fa-shopping-cart fa-2x icon {{#if icon }}icon-anim{{/if}}" id="cart" title="shopping cart" style="{{#if colorCart}}color:#ff6c00{{/if}}"></i></a>
+        <a href="/suggestion"><i class="fa fa-info-circle fa-2x" title="your suggestion" style="{{#if colorSuggestion}}color:#ff6c00{{/if}}"></i></a>
+        <a href="/map"><i class="fa fa-map-o fa-2x" title="nearby restaurant" style="{{#if colorMap}}color:#ff6c00{{/if}}"></i></a>
+        <a href="/logout"><i class="fa fa-sign-out fa-2x" title="log out"></i></a>
+      </div>
+    </form>
+
+    {{#if admin}}
+      <a href="/users" class = "APanel">Admin Panel</a>
+    {{/if}}
+  </div>
+</header>
+<img class="line" src="./image/spr.png" alt="">
+<div class="overlay2" style="text-align:center; opacity: 0.9;" hidden>
+  <p id="notification-container"></p>
+</div>
