@@ -6,34 +6,32 @@ const GETregister = (req, res, next) => {
   res.render('register', {
     layout: false
   });
-}
+};
 const PostRegister = (req, res) => {
-  const {
-    name,
-    password
-  } = req.body;
-  const number = req.body.numb;
+  const { name, password, phone_number, email } = req.body;
+  console.log(password, 'password');
   const conPassword = req.body.password_conf;
+  console.log(password, conPassword);
   if (password === conPassword) {
     hashpassword.hashedPassword(password, (err, hash) => {
-      if(err) res.render('error',{layout:false,error:err.toString()})
-      auth.insertData(name, number, hash, (err, response) => {
+      if (err) res.render('error', { layout: false, error: err.toString() });
+      auth.insertData(name, phone_number, hash, email, (err, response) => {
         if (err) {
+          console.log(err);
           res.render('register', {
             error: true,
             mssg: 'This account already exists',
             layout: false
-          })
-
+          });
         } else {
           const userData = {
             id: response[0].id,
             name: name,
-            role: 'user'
-          }
+            email
+          };
           const token = jwt.sign(userData, process.env.SECRET_KEY);
           res.cookie('accessToken', token);
-          res.redirect('/');
+          res.redirect('/showProject');
         }
       });
     });
@@ -44,8 +42,8 @@ const PostRegister = (req, res) => {
       layout: false
     });
   }
-}
+};
 module.exports = {
   GETregister,
   PostRegister
-}
+};

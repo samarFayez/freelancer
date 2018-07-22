@@ -1,0 +1,105 @@
+<div class="all">
+	<div class="conn">
+		<!-- Contenedor Principal -->
+		{{#projects}}
+		<div class="comments-container">
+			<ul id="comments-list" class="comments-list">
+				<li>
+					<div class="comment-main-level" style="margin-top:100px">
+						<!-- Avatar -->
+						<div class="comment-avatar"><img src="{{photo}}" alt=""></div>
+						<!-- Contenedor del Comentario -->
+						<div class="comment-box">
+							<div class="comment-head">
+								<h6 class="comment-name by-author"><a href="http://creaticode.com/blog">{{name}}</a></h6>
+								<span>hace {{datepost}}</span>
+								<i class="fa fa-reply"></i>
+								<i class="fa fa-heart"></i>
+							</div>
+							<div class="comment-content">
+								<div class="">
+									<h3>Title :</h3>
+								  <p> {{title}}</p>
+									<br>
+								</div>
+								<div class="">
+									<h3>details :</h3>
+									{{details}} <br>
+									<br>
+								</div>
+								<div class="">
+									<h3>duration :</h3>
+									{{duration}} <br>
+									<br>
+								</div>
+								<div class="">
+									<h3>price :</h3>
+									{{price}} <br>
+									<br>
+								</div>
+								<div class="">
+									<h3> required skill </h3>
+									{{#each skills}}
+									<p>{{skill}}</p>
+									{{/each}}
+									<br>
+								</div>
+								<div class="">
+									<h3> files </h3>
+									{{#each files}}
+									<p>{{filename}}</p>
+									  <a class="btn btn-warning" href="{{file}}" download=""><i class="fa fa-download"></i></a>
+									{{/each}}
+									<br>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- Respuestas de los comentarios -->
+					<ul class="comments-list reply-list ">
+						{{#each comments}}
+						<li>
+							<!-- Avatar -->
+							<div class="comment-avatar"><img src="{{photo}}" alt=""></div>
+							<!-- Contenedor del Comentario -->
+							<div class="comment-box">
+								<div class="comment-head">
+									<h6 class="comment-name"><a href="http://creaticode.com/blog">{{name}}</a></h6>
+									<span>hace 10 minutos</span>
+									<i class="fa fa-reply"></i>
+									<i class="fa fa-heart"></i>
+								</div>
+								<div class="comment-content">
+									{{description}}
+								</div>
+							</div>
+						</li>
+						{{/each}}
+						<li>
+							<!-- Avatar -->
+							<div class="comment-avatar"><img src="{{../tPhoto}}" alt=""></div>
+							<!-- Contenedor del Comentario -->
+							<div class="comment-box">
+								<div class="comment-head">
+									<h6 class="comment-name by-author">{{user.name}}</h6>
+									<span>hace 10 minutos</span>
+									<i class="fa fa-reply"></i>
+									<i class="fa fa-heart"></i>
+								</div>
+								 <div class="comment-content">
+									<!-- <form class=""> -->
+										<textarea name="comment" rows="8" cols="80" class="{{id}}"></textarea>
+										<button type="submit" onclick="comment({{id}})">add</button>
+									<!-- </form> -->
+								</div>
+							</div>
+						</li>
+
+					</ul>
+				</li>
+			</ul>
+		</div>
+		{{/projects}}
+	</div>
+
+</div>

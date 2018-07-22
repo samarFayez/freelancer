@@ -241,7 +241,7 @@ body {
 .comment-box .comment-name.by-author a {
   color: #03658c;
 }
-.comment-box .comment-name.by-author:after {
+/* .comment-box .comment-name.by-author:after {
   content: 'autor';
   background: #03658c;
   color: #fff;
@@ -252,7 +252,7 @@ body {
   -webkit-border-radius: 3px;
   -moz-border-radius: 3px;
   border-radius: 3px;
-}
+} */
 
 /** =====================
  * Responsive
@@ -283,15 +283,54 @@ body {
 fieldset {
   padding: 10px;
   background: #eee;
-  height: 200px;
+  height: 600px;
   width: 690px;
   margin-left: -104px;
   border: none;
+  margin-bottom: 20px;
+  padding-left: 60px;
+  padding-top: 37px;
+}
+
+.title,
+.details,
+.duration,
+.file,
+.p,
+.inp {
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+  border-radius: 3px;
+  -webkit-box-shadow: 0 1px 0 #fff, 0 -2px 5px rgba(0, 0, 0, 0.08) inset;
+  -moz-box-shadow: 0 1px 0 #fff, 0 -2px 5px rgba(0, 0, 0, 0.08) inset;
+  -ms-box-shadow: 0 1px 0 #fff, 0 -2px 5px rgba(0, 0, 0, 0.08) inset;
+  -o-box-shadow: 0 1px 0 #fff, 0 -2px 5px rgba(0, 0, 0, 0.08) inset;
+  box-shadow: 0 1px 0 #fff, 0 -2px 5px rgba(0, 0, 0, 0.08) inset;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  background: #eae7e7 url(https://cssdeck.com/uploads/media/items/8/8bcLQqF.png)
+    no-repeat;
+  border: 1px solid #c8c8c8;
+  color: #777;
+  font: 13px Helvetica, Arial, sans-serif;
+  margin: 0 0 10px;
+  padding: 15px 10px 15px 40px;
+  width: 80%;
 }
 .form_grp {
   margin-bottom: 10px;
+  /* width: 50%; */
 }
-label {
+.inp {
+  background: #d6a6a6 url(https://cssdeck.com/uploads/media/items/8/8bcLQqF.png)
+    no-repeat;
+}
+.label {
   width: 100%;
   height: 32px;
   line-height: 32px;
@@ -311,10 +350,24 @@ textarea {
   resize: none;
 }
 button {
-  padding: 5px 20px;
-  background-color: #0e7ec7;
+  padding: 5px 10px;
+  background-color: #0d0d0e;
   color: #fff;
   float: right;
+  margin-right: 52px;
+  border-radius: 50%;
+  height: 40px;
+  margin-top: 4px;
+}
+.remove {
+  padding: 5px 10px;
+  background-color: #e01542;
+  color: #fff;
+  float: left;
+  margin-right: 52px;
+  border-radius: 50%;
+  height: 40px;
+  margin-top: -11px;
 }
 .viewCmnt {
   clear: both;

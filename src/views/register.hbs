@@ -8,8 +8,13 @@
     <body>
       <div class="container">
         <section id="content">
-          <form action="">
+          <form action="/register" method="post">
             <h1>Register Form</h1>
+            {{#if mssg}}
+            <div class="inp">
+              <p>{{mssg}}</p>
+            </div>
+            {{/if}}
             <div>
               <input type="text" placeholder="Username" required="" id="username" name="name" />
             </div>
@@ -20,26 +25,22 @@
               <input type="text" placeholder="phone_number" required="" id="phone_number" name="phone_number" />
             </div>
             <div>
-              <input type="password" placeholder="Password" required="" id="password" />
+              <input type="password" placeholder="Password" required="" name="password" />
             </div>
             <div>
               <input type="password" placeholder="Confirm Password" required="" id="password" name="password_conf"/>
             </div>
-            <div>
+            <!-- <div>
               <textarea name="description" placeholder="write about yourself" rows="8" cols="80"></textarea>
             </div>
             <div>
               <input type="file" name="" value="">
-            </div>
+            </div> -->
             <div>
               <input type="submit" value="Register" />
               <a href="/login">Login</a>
             </div>
-          </form><!-- form -->
-          <!-- <div class="button"> -->
-            <!-- <a href="#">Download source file</a> -->
-          <!-- </div> -->
-          <!-- button -->
+          </form>
         </section><!-- content -->
       </div><!-- container -->
     </body>

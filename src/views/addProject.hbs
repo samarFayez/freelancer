@@ -1,0 +1,36 @@
+<div class="all">
+	<div class="con">
+		<div class="wrapper">
+			<div class="commentBoxfloat">
+				<form id="cmnt" action="addProject" method="POST" enctype="multipart/form-data">
+					<fieldset>
+							<div class="form_grp">
+								<label class="label">Add project</label>
+								<input type="text" placeholder="عنوان المشروع" name="title" class="title">
+								<textarea id="userCmnt" placeholder="تفاصيل المشروع" class="details" name="details"></textarea>
+								<input type="number" name="duration" placeholder="مدة المشروع" class="duration">
+								<input type="text" id="input-task" placeholder="Enter a skills" class="title">
+								<button id="addElem" onclick="addEleme(event)">
+									<i class="fa fa-fw fa-plus"></i>
+								</button>
+								<ul id="ul">
+								</ul>
+								<div class="title">
+									<p>price $</p>
+									<input type="text" name="from" value="" placeholder="من">
+									<input type="text" name="to" value="" placeholder="الى">
+								</div>
+								<div class="file">
+									<p>ملفات تخص المشروع</p>
+									<input type="file" name="file" accept="*" multiple="multiple">
+								</div>
+							</div>
+							<!-- <div class="form_grp"> -->
+								<button type="submit" id="submit">Submit</button>
+							<!-- </div> -->
+					</fieldset>
+				</form>
+			</div>
+    </div>
+		</div>
+    </div>
